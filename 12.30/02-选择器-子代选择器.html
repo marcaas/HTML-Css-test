@@ -1,0 +1,26 @@
+<!-- 作用：根据HTML标签的嵌套关系，选择父元素子代中满足条件的元素 -->
+<!-- 选择器语法：选择器1 > 选择器2 {css} -->
+<!-- 与后代选择器的区别是只找儿子 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        这是父级div
+        <p>
+            <a href="">这是div中的p中的a</a>
+        </p>
+        <a href="">这是div中的a</a>
+    </div>
+</body>
+</html>
